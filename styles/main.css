@@ -1,10 +1,14 @@
 :root {
-  --width: 250px;
+  --width: 100px;
   --height: calc(var(--width) / 2);
-  --font-size: 24px; /* Größe des Textes */
-  --font-weight: bold; /* Fettschrift */
-  --font-family: 'Arial', sans-serif; /* Schriftart */
-  --text-color: #333; /* Textfarbe */
+  --font-size: 24px;
+  /* Größe des Textes */
+  --font-weight: bold;
+  /* Fettschrift */
+  --font-family: 'Arial', sans-serif;
+  /* Schriftart */
+  --text-color: #333;
+  /* Textfarbe */
 }
 
 body {
@@ -30,20 +34,25 @@ body {
   font-weight: var(--font-weight);
   font-family: var(--font-family);
   color: var(--text-color);
-  animation: toRight linear 3.4s infinite alternate, bounce linear 8.5s infinite alternate; /* Animationen schneller gemacht */
+  animation: toRight linear 3.4s infinite alternate, bounce linear 8.5s infinite alternate;
+  /* Animationen schneller gemacht */
+  padding: 0;
+  margin: 0;
 }
 
 @keyframes bounce {
   0% {
     top: 0;
   }
-  48% {
-  }
+
+  48% {}
+
   50% {
     top: calc(100% - var(--height));
   }
-  52% {
-  }
+
+  52% {}
+
   100% {
     top: 0;
   }
@@ -53,6 +62,7 @@ body {
   0% {
     left: 0;
   }
+
   100% {
     left: calc(100% - var(--width));
   }
@@ -60,7 +70,8 @@ body {
 
 /* Optional: Ball Hintergrundbild */
 .ball {
-  background-image: url('path-to-your-image.png'); /* Geben Sie hier den Pfad zu Ihrem Bild an */
+  background-image: url('path-to-your-image.png');
+  /* Geben Sie hier den Pfad zu Ihrem Bild an */
 }
 
 /* Optional: Ball Container */
